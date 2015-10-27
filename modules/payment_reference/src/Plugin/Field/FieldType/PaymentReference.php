@@ -41,6 +41,9 @@ class PaymentReference extends EntityReferenceItem {
     return parent::defaultFieldSettings() + [
       'currency_code' => '',
       'line_items_data' => [],
+      'handler_settings' => [
+        'target_bundle' => 'payment_reference',
+      ],
     ];
   }
 
